@@ -1,1 +1,103 @@
-/*artists gallery*/
+.section-artists-title{
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-family: 'IBM Plex Sans';
+}
+.artists-subtitle{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    max-width: 523px;
+    margin-bottom: 80px;
+}
+.art-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    column-gap: 32px;
+    margin-bottom: 64px;
+}
+.artist-card{
+    flex-basis: calc((100% - 32px) / 2);
+}
+.art-photo{
+    max-height: 393px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+.genre{
+    font-family: 'IBM Plex Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 4px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+.genres-list{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.artist-name{
+    font-size: 32px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+}
+.artist-bio{
+    font-family: 'IBM Plex Sans';
+    font-size: 18px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+.learn-more-btn{
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff;
+    margin-right: 8px;
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0;
+}
+.load-more-btn{
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    border-radius: 12px;
+    border: none;
+    padding: 10px 24px;
+    width: 170px;
+    height: 47px;
+    box-shadow:
+            0 1px 2px rgba(6, 3, 7, 0.05),
+            inset 0 -2px 1px rgba(0, 0, 0, 0.2),
+            inset 0 0 0 1px rgba(6, 3, 7, 0.15),
+            inset 0 2px 1px rgba(255, 255, 255, 0.25);
+    display: block;
+    margin: 0 auto;
+    background: #764191;
+    margin: 0 auto;
+}
+.load-more-btn, .learn-more-btn{
+    transition: opacity 250ms ease-in-out;
+}
+.load-more-btn:hover, .learn-more-btn:hover{
+    opacity: 0.6;
+}
+.is-hidden {
+    display: none;
+}
