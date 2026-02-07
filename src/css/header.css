@@ -1,8 +1,8 @@
 /*header*/
 
 .header {
-  width: 1312px;
-  height: 72px;
+  width: 288px;
+  height: 51px;
   margin-top: 10.5px;
   margin-bottom: 10.5px;
   display: flex;
@@ -12,27 +12,31 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+  @media only screen and (min-width: 768px) {
+    width: 640px;
+  }
+  @media only screen and (min-width: 1440px) {
+    width: 1312px;
+  }
 }
 
 .header-nav {
-  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   list-style: none;
   gap: 32px;
-  transition: all 500ms ease-in;
-  visibility: hidden;
+  display: none;
   @media only screen and (min-width: 768px) {
-    visibility: visible;
+    display: flex;
   }
 }
 .nav-item-link {
+  display: inline-block;
   text-decoration: none;
-  text-decoration-skip-ink: none;
   transition: all 250ms ease-in-out;
   &:hover {
-    text-decoration: underline;
+    transform: scale(1.05);
     opacity: 0.6;
   }
   &:active {
