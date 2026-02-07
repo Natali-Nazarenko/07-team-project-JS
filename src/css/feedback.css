@@ -1,7 +1,31 @@
-.feedback-card {
+.feedback-section {
+  padding: 64px 16px; /* Згідно з Box Model на скріншоті image_83de7a */
   width: 100%;
+  max-width: 320px; /* Ширина контейнера на скріншоті */
+  height: 381px; /* Фіксована висота секції */
   margin: 0 auto;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: var(--color-scheme-1-background); /* Твій колір фону */
+}
+
+.feedback-swiper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.feedback-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 288px; /* Згідно з image_83debc */
+  height: auto;
+  margin: 0 auto;
 }
 
 .star-rating {
@@ -11,13 +35,17 @@
 }
 
 .feedback-text {
-  font-family: inherit;
+  font-family: var(--second-family); /* Твій шрифт */
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.4; /* 1.4 згідно з image_83e944 */
   letter-spacing: -0.01em;
-  color: #ffffff;
-  margin-bottom: 20px;
+  text-align: center;
+  color: var(--color-scheme-1-text);
+  margin-bottom: 16px; /* Gap до автора згідно з image_83ece4 */
+
+  /* Обмеження ширини тексту */
+  width: 288px;
 }
 
 .feedback-author {
@@ -25,14 +53,16 @@
   font-size: 18px;
   line-height: 1.5;
   color: #ffffff;
+  margin-bottom: 0;
 }
 
 .swiper-pagination {
   position: static !important;
-  margin-top: 32px;
+  margin-top: 16px; /* Виштовхуємо вниз секції */
+  padding-bottom: 16px;
   display: flex;
   justify-content: center;
-  gap: 9px;
+  gap: 8px;
 }
 
 .custom-bullet {
@@ -40,7 +70,6 @@
   height: 8px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
