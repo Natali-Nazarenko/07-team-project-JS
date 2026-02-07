@@ -1,1 +1,183 @@
-/*feedback*/
+.feedback-section {
+  padding: 64px 16px; /* Згідно з Box Model на скріншоті image_83de7a */
+  width: 100%;
+  max-width: 320px; /* Ширина контейнера на скріншоті */
+  height: 381px; /* Фіксована висота секції */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: var(--color-scheme-1-background); /* Твій колір фону */
+}
+
+.feedback-swiper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.feedback-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 288px; /* Згідно з image_83debc */
+  height: auto;
+  margin: 0 auto;
+}
+
+.star-rating {
+  display: inline-flex;
+  gap: 4px;
+  margin-bottom: 32px;
+}
+
+.feedback-text {
+  font-family: var(--second-family); /* Твій шрифт */
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4; /* 1.4 згідно з image_83e944 */
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--color-scheme-1-text);
+  margin-bottom: 16px; /* Gap до автора згідно з image_83ece4 */
+
+  /* Обмеження ширини тексту */
+  width: 288px;
+}
+
+.feedback-author {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.swiper-pagination {
+  position: static !important;
+  margin-top: 16px; /* Виштовхуємо вниз секції */
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.custom-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.custom-bullet-active {
+  background-color: #ffffff;
+}
+
+.feedback-arrow {
+  display: none !important;
+}
+
+.star-rating__star {
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+  background-color: #ffffff;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>')
+    no-repeat center;
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>')
+    no-repeat center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+
+  transition: background-color 0.3s ease;
+}
+
+/* --- ПЛАНШЕТ (768px+) --- */
+
+@media (min-width: 768px) {
+  .feedback-section {
+    padding: 64px 32px;
+    height: 298px;
+    width: 704px;
+    overflow: visible;
+  }
+
+  .feedback-swiper {
+    max-width: 704px;
+  }
+
+  .feedback-card {
+    max-width: 518px;
+    /* padding: 32px; */
+  }
+
+  .feedback-text {
+    font-size: 24px;
+    display: block;
+  }
+
+  .feedback-author {
+    font-size: 16px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: flex !important;
+    position: absolute;
+    top: 50%;
+    width: 48px !important;
+    height: 48px !important;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 16%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0;
+    transition: opacity 250ms ease;
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    opacity: 0.6;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    display: none;
+  }
+
+  .swiper-button-prev .icon,
+  .swiper-button-next .icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+}
+
+/* --- ДЕСКТОП (1440px) --- */
+
+@media (min-width: 1440px) {
+  .feedback-section {
+    padding: 0;
+
+    height: 622px;
+    width: 1440px;
+  }
+
+  .feedback-swiper {
+    max-width: 1216px;
+  }
+
+  .feedback-card {
+    /* max-width: 866px; */
+    padding: 112px 64px;
+    /* padding: 40px; */
+  }
+}
