@@ -20,13 +20,18 @@
   }
 }
 
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
 .header-nav {
+  display: none;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   list-style: none;
   gap: 32px;
-  display: none;
   @media only screen and (min-width: 768px) {
     display: flex;
   }
@@ -41,5 +46,15 @@
   }
   &:active {
     opacity: 0.2;
+  }
+}
+.mobile-menu-btn {
+  display: block;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  @media (min-width: 768px) {
+    display: none;
   }
 }
