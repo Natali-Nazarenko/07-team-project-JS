@@ -66,19 +66,25 @@
     margin-bottom: 24px;
 }
 .learn-more-btn{
-    width: 125px;
+    min-width: 125px;
     height: 27px;
-    font-family: 'IBM Plex Sans';
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.5;
     color: #fff;
-    margin-right: 8px;
+    display: flex;
+    gap: 8px;
     background-color: transparent;
     border-color: transparent;
     padding: 0;
 }
-.load-more-btn{
+.btn-text{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'IBM Plex Sans';
+    line-height: 1.5;
+}
+.btn-load-more{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
     width: 288px;
     height: 47px;
     font-family: 'IBM Plex Sans';
@@ -94,17 +100,15 @@
             inset 0 -2px 1px rgba(0, 0, 0, 0.2),
             inset 0 0 0 1px rgba(6, 3, 7, 0.15),
             inset 0 2px 1px rgba(255, 255, 255, 0.25);
-    display: block;
-    margin: 0 auto;
     background: #764191;
 }
-.load-more-btn, .learn-more-btn{
+.btn-load-more, .learn-more-btn{
     transition: opacity 250ms ease-in-out;
 }
-.load-more-btn:hover, .learn-more-btn:hover{
+.btn-load-more:hover, .learn-more-btn:hover{
     opacity: 0.6;
 }
-.is-hidden {
+.hidden {
     display: none;
 }
 
@@ -127,7 +131,7 @@
         max-height: 433px;
     }
 
-    .load-more-btn{
+    .btn-load-more{
         width: 340px;
         height: 47px;
         margin: 0 auto;
@@ -161,9 +165,13 @@
         flex-basis: calc((100% - 32px) / 2);
     }
 
-    .load-more-btn {
+    .btn-load-more {
         width: 170px;
         height: 47px;
     }
+    
 }
 
+.artists-section .loader{
+    margin: 0 auto;
+}
