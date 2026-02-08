@@ -2,9 +2,7 @@
 
 .header {
   width: 288px;
-  height: 51px;
-  margin-top: 10.5px;
-  margin-bottom: 10.5px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,6 +10,9 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+  position: sticky;
+  top: 0;
+  background-color: #060307;
   @media only screen and (min-width: 768px) {
     width: 640px;
   }
@@ -21,8 +22,15 @@
 }
 
 .header-logo {
+  height: 51px;
   display: flex;
   align-items: center;
+}
+.header-logo-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 51px;
 }
 
 .header-nav {
@@ -36,9 +44,24 @@
     display: flex;
   }
 }
-.nav-item-link {
-  display: inline-block;
+.header-nav-item-link {
+  display: flex;
+  align-items: center;
+  height: 51px;
   text-decoration: none;
+}
+.mobile-menu-open-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.chosen {
   transition: all 250ms ease-in-out;
   &:hover {
     transform: scale(1.05);
@@ -46,15 +69,5 @@
   }
   &:active {
     opacity: 0.2;
-  }
-}
-.mobile-menu-btn {
-  display: block;
-  width: 24px;
-  height: 18px;
-  background: none;
-  border: none;
-  @media (min-width: 768px) {
-    display: none;
   }
 }
