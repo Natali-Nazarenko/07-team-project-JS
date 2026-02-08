@@ -13,8 +13,9 @@
     <meta name="description" content="Discover your next favorite artist today!"/>
 
     <script type="module" crossorigin src="/07-team-project-JS/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/07-team-project-JS/assets/vendor-Cz4yiyMt.js">
-    <link rel="stylesheet" crossorigin href="/07-team-project-JS/assets/index-DdO8J2kQ.css">
+    <link rel="modulepreload" crossorigin href="/07-team-project-JS/assets/vendor-BRq3c0uS.js">
+    <link rel="stylesheet" crossorigin href="/07-team-project-JS/assets/vendor-BDFNOIGF.css">
+    <link rel="stylesheet" crossorigin href="/07-team-project-JS/assets/index-BijMisV0.css">
   </head>
   <body>
     <header class="header">header</header>
@@ -26,7 +27,26 @@
       <div>hero</div>
       <div>Artists</div>
       <div>About us</div>
-      <div>Feedback</div>
+      <section class="feedback-section container" id="reviews">
+  <div class="swiper feedback-swiper">
+    <div class="swiper-wrapper" id="feedback-list"></div>
+
+    <div class="swiper-button-prev feedback-arrow">
+      <svg class="icon-review" width="24" height="24">
+        <use href="/07-team-project-JS/assets/sprite-white-Of7GCsz2.svg#left-arrow"></use>
+      </svg>
+    </div>
+
+    <div class="swiper-button-next feedback-arrow">
+      <svg class="icon-review" width="24" height="24">
+        <use href="/07-team-project-JS/assets/sprite-white-Of7GCsz2.svg#right-arrow"></use>
+      </svg>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
     </main>
 
     <footer class="footer">footer</footer>
