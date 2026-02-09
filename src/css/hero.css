@@ -18,7 +18,7 @@
     background-position: bottom;
 }
 
-.container{
+.container-hero{
     min-height: 1031px;
     padding: 0 16px;
     box-sizing: border-box;
@@ -112,7 +112,7 @@ background:
     background-position: bottom;
     }
 
-    .container{
+    .container-hero{
         min-height: 995px;
         padding: 0 32px;
     }
@@ -151,7 +151,7 @@ background:
     #23132b;
     }
 
-    .container {
+    .container-hero {
         display: flex;
         align-items: center;
 
