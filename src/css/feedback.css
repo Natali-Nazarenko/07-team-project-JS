@@ -15,7 +15,6 @@
 .feedback-section {
   padding: 64px 0;
   margin: 0 auto;
-  max-width: 320px;
 }
 
 .feedback-swiper {
@@ -85,6 +84,7 @@
   transition:
     background-color 0.3s ease,
     transform 0.2s ease;
+  cursor: pointer;
 }
 
 .custom-bullet-active {
