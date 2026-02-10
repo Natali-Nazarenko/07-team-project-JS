@@ -1,6 +1,6 @@
 <section class="about-us" id="about-us">
   <div class="about-us-container container">
-    <picture class="about-us-img">
+    <picture class="about-us-picture">
       <source
         srcset="
           ../img/about-us/team-mob-1x.webp 1x,
@@ -13,7 +13,7 @@
           ../img/about-us/team-tab-1x.webp 1x,
           ../img/about-us/team-tab-2x.webp 2x
         "
-        media="( max-width:1439px)"
+        media="(min-width: 768px) and (max-width: 1439px)"
       />
       <source
         srcset="
@@ -22,7 +22,11 @@
         "
         media="(min-width:1440px)"
       />
-      <img src="../img/about-us/team-dsktp-1x.webp" alt="Our Team" />
+      <img
+        class="about-us-img"
+        src="../img/about-us/team-dsktp-1x.webp"
+        alt="Our Team"
+      />
     </picture>
     <div class="about-us-content">
       <svg class="about-us-icon">
