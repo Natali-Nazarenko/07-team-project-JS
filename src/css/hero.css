@@ -16,7 +16,8 @@
 
 .container-hero {
   min-height: 1031px;
-  box-sizing: border-box;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .hero-info {
@@ -85,7 +86,9 @@
   }
 
   .container-hero {
-    min-height: 900px;
+    min-height: 995px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .hero-info {
