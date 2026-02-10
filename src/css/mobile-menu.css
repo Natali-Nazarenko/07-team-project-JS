@@ -11,6 +11,9 @@
   transition: all 250ms ease-in-out;
 }
 .mobile-menu-header {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
   height: 64px;
   display: flex;
   justify-content: space-between;
