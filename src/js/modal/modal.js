@@ -1,8 +1,13 @@
 import { createArtistModalMarkup } from './modal-render';
 
-const backdrop = modalRoot.querySelector('[data-modal]');
-const modalRoot = document.querySelector('[data-modal-wrapper]');
-const closeBtn = modalRoot.querySelector('[data-closeBtn]');
+const backdrop = document.querySelector('[data-modal]');
+const modalRoot = backdrop.querySelector('[data-modal-wrapper]');
+const closeBtn = backdrop.querySelector('[data-closeBtn]');
+
+// console.log(backdrop);
+// console.log(modalRoot);
+// console.log(closeBtn);
+
 
 export function openArtistModal(artist, albums) {
   console.log('openArtistModal');

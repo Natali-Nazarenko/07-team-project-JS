@@ -1,6 +1,11 @@
 import './render-functions/render-modal';
 // console.log (DATA) in  main-artists.js
 
+// const backdrop = document.querySelector('[data-modal]');
+// const modalRoot = backdrop.querySelector('[data-modal-wrapper]');
+// const closeBtn = backdrop.querySelector('[data-closeBtn]');
+
+
 // const closeBtn = document.querySelector('[data-closeBtn]');
 // const backdrop = document.querySelector('[data-modal]');
 
