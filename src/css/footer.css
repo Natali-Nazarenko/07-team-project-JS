@@ -38,6 +38,10 @@ color: #fff;
   color: #764191;
 }
 
+.icon-triangle{
+  --color1: #764191;
+  
+}
 .social {
   display:flex;
   gap: 32px;
