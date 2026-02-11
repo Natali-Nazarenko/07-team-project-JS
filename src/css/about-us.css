@@ -26,7 +26,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 24px;
+  gap: 20px;
 }
 
 .about-us-icon {
@@ -65,7 +65,7 @@
   }
 
   .about-us-content {
-    gap: 32px;
+    gap: 24px;
   }
 
   .about-us-icon {
@@ -89,9 +89,5 @@
     width: 640px;
     height: 665px;
     flex-shrink: 0;
-  }
-
-  .about-us-content {
-    gap: 32px;
   }
 }
