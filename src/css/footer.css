@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 288px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 16px;
   height: auto;
@@ -62,9 +62,12 @@
 .nav-links-item {
   text-decoration: none;
   transition: all 250ms ease-in-out;
-  &:hover,
-  &:focus {
+  &:hover {
     color: #764191;
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.2;
   }
 }
 
@@ -99,21 +102,42 @@
 }
 
 .social svg {
+  display: block;
   width: 40px;
   height: 40px;
   fill: #ffffff;
   transition: fill 0.2s ease;
+  @media only screen and (min-width: 768px) {
+    width: 32px;
+    height: 32px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 24px;
+    height: 24px;
+  }
 }
 
-.social-link:hover,
-.social-link:focus {
-  transform: scale(1.15);
+.social-link {
+  transition: all 250ms ease-in-out;
+  &:hover {
+    scale: 1.15;
+    opacity: 0.6;
+    svg {
+      fill: #764191;
+    }
+  }
+  &:active {
+    opacity: 0.2;
+  }
 }
 
 .copyright {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 24px;
+
   color: #fff;
+  font-weight: 400;
+  font-size: 16px;
 }
