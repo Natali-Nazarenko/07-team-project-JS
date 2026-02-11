@@ -10,7 +10,6 @@ async function initArtists() {
     try {
         showLoader();
         const data = await getArtists(page);
-        console.log(data);
 
         if (data.artists.length === 0) {
             validInput({ title: 'Помилка', message: 'Не вдалося завантажити дані' });
