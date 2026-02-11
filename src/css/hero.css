@@ -15,24 +15,43 @@
 }
 
 .container-hero {
+  width: 320px;
   min-height: 1031px;
-  padding-top: 0;
-  padding-bottom: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 128px;
+  padding-bottom: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .hero-info {
   display: flex;
   flex-direction: column;
-  padding-top: 64px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  @media screen and (min-width: 768px) {
+    gap: 32px;
+  }
 }
 
+.hero-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media screen and (min-width: 768px) {
+    gap: 24px;
+  }
+}
 .hero-title {
   font-family: 'Epilogue', sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 1.1;
   letter-spacing: -0.01em;
-  margin-bottom: 20px;
 }
 
 .hero-text {
@@ -46,6 +65,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   gap: 12px;
 
   font-family: 'IBM Plex Sans', sans-serif;
@@ -53,10 +73,8 @@
   font-size: 18px;
   line-height: 1.5;
 
-  min-width: 288px;
+  width: 100%;
   height: 47px;
-  margin: 24px auto 64px;
-  padding: 10px 24px;
 
   border-radius: 12px;
   box-shadow:
@@ -101,15 +119,17 @@
   }
 
   .container-hero {
-    min-height: 995px;
+    margin-top: 32px;
     padding-top: 0;
+    padding-left: 32px;
+    padding-right: 32px;
     padding-bottom: 0;
+    width: 768px;
+    min-height: 995px;
   }
 
   .hero-info {
     width: 624px;
-    padding-top: 32px;
-    padding-right: 80px;
   }
 
   .hero-text {
@@ -118,7 +138,6 @@
 
   .hero-link {
     min-width: 246px;
-    margin: 32px 458px 32px 0;
   }
 }
 
@@ -127,13 +146,17 @@
     background:
       linear-gradient(to top, #060307 0%, rgba(35, 19, 43, 0) 80px),
       linear-gradient(to bottom, #060307 0%, rgba(35, 19, 43, 0) 137px), #23132b;
+    margin: 0 auto;
   }
 
   .container-hero {
     display: flex;
     align-items: center;
-    padding-top: 0;
-    padding-bottom: 0;
+    max-width: 1440px;
+    width: 100%;
+    min-height: 900px;
+    padding-left: 64px;
+    padding-right: 64px;
 
     background:
       linear-gradient(to top, #060307 0%, rgba(35, 19, 43, 0) 80px),
@@ -141,8 +164,8 @@
       image-set(
         url('../img/hero/hero-bg-dsktp-1x.webp') 1x,
         url('../img/hero/hero-bg-dsktp-2x.webp') 2x
-      ),
-      #23132b;
+      );
+
     background-repeat: repeat, repeat, no-repeat;
     background-position: center, center, right;
     background-size:
@@ -153,7 +176,6 @@
 
   .hero-info {
     width: 640px;
-    padding-right: 31px;
   }
 
   .hero-title {
