@@ -1,5 +1,4 @@
 .artists-section{
-    padding: 64px 16px;
     max-width: 288px;
     margin: 0 auto;
 }
@@ -114,7 +113,6 @@
 
 @media screen and (min-width: 768px) {
     .artists-section {
-        padding: 64px 32px;
         max-width: 768px;
     }
 
@@ -141,7 +139,6 @@
 
 @media only screen and (min-width: 1440px) {
     .artists-section {
-        padding: 112px 0;
         max-width: 1440px;
     }
     .artists-subtitle {
