@@ -10,7 +10,7 @@ import{a as d,i as y,S as C,N as q,P as B}from"./assets/vendor-DcjOYWbS.js";(fun
             <p class='artist-bio'>${s}</p>
             <button class='learn-more-btn' type="button" data-artist-id="${i}"><span class='btn-text'>Learn More</span>
             <svg class="right-triangle" width="24" height="24">
-            <use href="/img/sprite-white.svg#right-triangle-full"></use>
+            <use href="img/sprite-white.svg#right-triangle-full"></use>
             </svg>
             </button>
         </li>
