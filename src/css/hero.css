@@ -152,11 +152,11 @@
   .container-hero {
     display: flex;
     align-items: center;
-    max-width: 1440px;
+    max-width: 1312px;
     width: 100%;
     min-height: 900px;
-    padding-left: 64px;
-    padding-right: 64px;
+    padding-left: 0;
+    padding-right: 0;
 
     background:
       linear-gradient(to top, #060307 0%, rgba(35, 19, 43, 0) 80px),
