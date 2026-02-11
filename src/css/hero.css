@@ -66,6 +66,7 @@
     inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
     inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
   background-color: #764191;
+  transition: all 250ms ease-in-out;
   &:hover {
     background-color: rgba(118, 65, 145, 0.05);
     box-shadow:
